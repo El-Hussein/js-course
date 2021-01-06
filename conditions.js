@@ -56,3 +56,31 @@ if (code == 1) {
 totalPrice = price * quantity;
 
 console.log("Total: R$", totalPrice);
+
+/**
+ * if(l is odd and c is even or l is even and c is odd) then result is black
+ * otherwise result is white
+ */
+
+let l, c;
+
+l = 6;
+c = 9;
+
+let result;
+if ((l % 2 == 0 && c % 2 != 0) || (l % 2 != 0 && c % 2 == 0)) {
+  result = "black";
+} else {
+  result = "white";
+}
+
+console.log("result", result);
+
+/**
+ * 2 - 3 => black
+ * 4 - 5 => black
+ * 9 - 6 => black
+ * 4 - 4 => white
+ * 9 - 5 => white
+ * 7 - 5 => white
+ */
