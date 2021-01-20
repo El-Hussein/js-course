@@ -1,5 +1,5 @@
 // loops
-console.log("loopss");
+console.log("loops");
 
 /**
  * for => condition, start, step, iterator
@@ -35,6 +35,7 @@ let check = true;
 for (let i = 2; i < number; i++) {
   if (number % i == 0) {
     check = false;
+    break; // finish loop and exit the for
   }
 }
 
